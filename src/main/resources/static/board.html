@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Board</title>
+    <link rel="stylesheet" href="css/board.css" />
+</head>
+<body>
+
+    <!-- 상단바 -->
+    <div class="top-bar">
+        <span>Simple Board</span>
+        <span id="userInfo"></span>
+    </div>
+
+    <!-- 메시지 목록 -->
+    <div class="message-list" id="message-list"></div>
+
+    <!-- 입력창 -->
+    <div class="input-box">
+        <input type="text" id="msg" placeholder="메시지를 입력하세요" />
+        <button onclick="sendMessage()">보내기</button>
+        <button onclick="logout()">로그아웃</button>
+    </div>
+
+    <script src="js/board.js"></script>
+
+</body>
+</html>
